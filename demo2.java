@@ -1,6 +1,15 @@
 public class demo2 {
+    public String a;
+    public String b;
+
     public static void main(String[] args) {
         fibonacciSequence(10);
+        demo2 d2 = new demo2();
+        String a = "1";
+        String b = "bo";
+        d2.exchangeVariable(a, b);
+        System.out.println(d2.a);
+        System.out.println(d2.b);
     }
 
     public static void fibonacciSequence(int num) {
@@ -14,6 +23,10 @@ public class demo2 {
             a = b;
             b = c;
         }
+    }
 
+    public void exchangeVariable(String a, String b) {
+        this.a = b;
+        this.b = a;
     }
 }
